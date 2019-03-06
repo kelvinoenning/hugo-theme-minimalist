@@ -1,5 +1,5 @@
 # Minimalist
 
-*Minimalist* is a clean theme for [Hugo](https://gohugo.io/)
+*Minimalist* é um tema minimalista para o [Hugo](https://gohugo.io/)
 
-Loading... ... ... ... ...
+Em construção...
