@@ -8,7 +8,7 @@ description = "Minimalist is a clean theme for Hugo."
 homepage = "https://github.com/kelvinoenning/hugo-theme-minimalist"
 tags = []
 features = []
-min_version = "1.0"
+min_version = "0.1"
 
 [author]
   name = "Kelvin Oenning"
