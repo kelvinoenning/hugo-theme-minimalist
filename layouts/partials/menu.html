@@ -1,3 +1,6 @@
 <div class="menu">
+    {{ if .Site.Params.Profile.Img }}
+    <img src="{{ .Site.Params.Profile.Img }}" alt="Profile Logo" width="45px" height="45px">
+    {{ end }}
     <a href="/">{{ .Site.Title }}</a>
 </div>
