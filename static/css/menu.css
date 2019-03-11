@@ -1,0 +1,11 @@
+.menu {
+    padding: 15px;
+    background-color: #1E1E1E;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FBFBFB;
+    font-size: 1.3em;
+}
