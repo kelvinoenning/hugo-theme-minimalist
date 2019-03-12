@@ -1,6 +1,19 @@
 <div class="menu">
-    {{ if .Site.Params.Profile.Img }}
-    <img src="{{ .Site.Params.Profile.Img }}" alt="Profile Logo" width="45px" height="45px">
-    {{ end }}
-    <a href="/">{{ .Site.Title }}</a>
+    <div class="menu-id">
+        {{ if .Site.Params.Profile.Img }}
+        <img src="{{ .Site.Params.Profile.Img }}" alt="Profile Logo" width="45px" height="45px">
+        {{ end }}
+        <a href="/">{{ .Site.Title }}</a>
+    </div>
+    <nav class="menu-nav">
+        <ul>
+            {{ range .Site.Params.Links }}
+            <li>
+                <a target="_blank" href="{{ .Url }}">
+                    <i class="fab {{ .Icon }}"></i>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
 </div>
