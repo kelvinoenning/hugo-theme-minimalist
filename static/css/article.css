@@ -1,0 +1,39 @@
+.article a {
+    color: #dd4c4f;
+    font-size: 1.3em;
+}
+
+.article .return a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.article img[src*='#center'] {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.article-date {
+    color: rgba(0,0,0,.44);
+}
+
+.article-date, .article-title {
+    text-align: center;
+}
+
+.article-title {
+    font-size: 1.2em;
+    color: #343a40;
+}
+
+.article-content {
+    color: #343a40;
+}
+
+.article-file {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.85em;
+    color: #343a40;
+}
