@@ -6,7 +6,7 @@
         <div class="post">
             <div class="post-content">
                 <div class="post-title">
-                    <a href="/">{{ .Title }}</a>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 </div>
                 <div class="post-description">
                     {{ .Params.Description }}
