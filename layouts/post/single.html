@@ -1,0 +1,20 @@
+{{ partial "top.html" . }}
+
+<div class="container">
+    <div class="article">
+        <div class="return">
+            <a class="return" href="/">Voltar</a>
+        </div>
+        <div class="article-date">
+            {{ dateFormat "02-01-2006 04:05" .Date }}
+        </div>
+        <div class="article-title">
+            <h1>{{ .Title }}</h1>
+        </div>
+        <div class="article-content">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+
+{{ partial "bottom.html" . }}
