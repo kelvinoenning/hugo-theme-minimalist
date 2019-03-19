@@ -3,6 +3,17 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-{{ range $key, $value := .Site.Params.Meta -}}
-    <meta name="{{ $key }}" content="{{ $value }}">
-{{- end}}
+{{ if eq $.Type "post" }}
+    <title>{{ (index $.Params "title") }}</title>
+{{ else }}
+    <title>{{ .Site.Title }}</title>
+{{ end }}
+
+{{ range $key, $value := .Site.Params.Meta }}
+    {{ $.Scratch.Set $key $value }}
+    {{ if eq $.Type "post" }}
+        {{ if eq $key "description" }}{{ $.Scratch.Set $key (index $.Params $key) }}{{ end }}
+        {{ if eq $key "keywords" }}{{ $.Scratch.Set $key (delimit (index $.Params $key) ", ") }}{{ end }}
+    {{ end }}
+    <meta name="{{ $key }}" content="{{ $.Scratch.Get $key }}">
+{{ end}}
