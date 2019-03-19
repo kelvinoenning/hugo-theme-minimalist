@@ -15,9 +15,6 @@ Theme: "hugo-theme-minimalist"
 Permalinks:
   Post: "/:year/:month/:title/"
 
-Taxonomies:
-  teste: "teste"
-
 Params:
   Meta:
     Description: "O Blog do programador é um site onde trago novidades e testes sobre as tecnologias atuais, melhorias de desempenho, novidades de atualizações em geral."
