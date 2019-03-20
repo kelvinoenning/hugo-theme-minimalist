@@ -3,9 +3,25 @@
     font-size: 1.3em;
 }
 
-.article .return a {
+.article .return a, .article .return-mobile a {
     text-decoration: none;
     color: #343a40;
+}
+
+.article .return-mobile {
+    display: none;
+}
+
+.article .return-mobile a {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px;
+    color: #FBFBFB;
+    background-color: #343a40;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
 .article img[src*='#center'] {
@@ -15,10 +31,11 @@
 }
 
 .article-date {
-    color: rgba(0,0,0,.44);
+    color: rgba(0, 0, 0, .44);
 }
 
-.article-date, .article-title {
+.article-date,
+.article-title {
     text-align: center;
 }
 
@@ -36,4 +53,10 @@
     font-weight: bold;
     font-size: 0.85em;
     color: #343a40;
+}
+
+@media only screen and (max-width: 768px) {
+    .article .return-mobile {
+        display: block;
+    }
 }
