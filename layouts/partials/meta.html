@@ -3,12 +3,25 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
+{{/*  Title Tags  */}}
 {{ if eq $.Type "post" }}
     <title>{{ (index $.Params "title") }}</title>
 {{ else }}
     <title>{{ .Site.Title }}</title>
 {{ end }}
 
+{{/*  Facebook Share Tags  */}}
+{{ if eq $.Type "post" }}
+    <meta property="og:url"                content="{{ .Permalink }}" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="{{ $.Params.Title }}" />
+    <meta property="og:description"        content="{{ $.Params.Description }}" />
+    {{ if isset $.Params "cover" }}
+        <meta property="og:image"              content="{{ $.Params.Cover | absURL }}" />
+    {{ end}}
+{{ end }}
+
+{{/*  SEO Tags  */}}
 {{ range $key, $value := .Site.Params.Meta }}
     {{ $.Scratch.Set $key $value }}
     {{ if eq $.Type "post" }}
