@@ -2,16 +2,27 @@
 
 *Minimalist* é um tema minimalista para o [Hugo](https://gohugo.io/)
 
-Em construção...
-
 <a href='https://ko-fi.com/G2G1S9O1' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
-### Exemplo do atual arquivo de configuração
+## Instalação
+
+    $ mkdir themes
+    $ cd themes
+    $ git submodule add https://github.com/kelvinoenning/hugo-theme-minimalist.git hugo-theme-minimalist
+
+Para mais informações acesse a [documentação Hugo](https://gohugo.io/themes/installing/).
+
+## Imagem demo
+
+![Mobile](./static/img/mobile.png)
+![Desktop](./static/img/desktop.png)
+
+## Exemplo de configuração
 
 ```yml
 BaseURL: "http://example.org/"
 LanguageCode: "pt-BR"
-Title: "Blog do programador - Tudo de mais avançado sobre novas tecnologias!"
+Title: "Demo"
 Theme: "hugo-theme-minimalist"
 
 Permalinks:
@@ -19,29 +30,40 @@ Permalinks:
 
 Params:
   Meta:
-    Description: "O Blog do programador é um site onde trago novidades e testes sobre as tecnologias atuais, melhorias de desempenho, novidades de atualizações em geral."
-    keywords: "programador, programação, programar, linguagem, tecnologia, nodejs, go, golang, hugo, aws, lambda, dynamo, sqs, sns, ec2, kubernetes, db, database, banco de dados, benchmark, desempenho, otimização, melhoria, design, pattern, design pattern, vuejs, react, ember"
+    Description: "Minimalist - O melhor tema minimalista para o Hugo"
+    keywords: "minimalist, tema, theme, hugo"
     Robots: "index, follow"
     Revisit-after: "1 day"
     Language: "Portuguese"
     Generator: "N/A"
   Profile:
     Img: "/img/profile.jpg"
-    Title: "Blog do programador"
+    Title: "Demo"
   Links:
     - Name: "Github"
-      Url: "https://github.com/kelvinoenning"
+      Url: "https://github.com/..."
       Icon: "fa-github"
     - Name: "Twitter"
-      Url: "https://twitter.com/"
+      Url: "https://twitter.com/..."
       Icon: "fa-twitter"
     - Name: "Facebook"
-      Url: "https://www.facebook.com/kelvin.stangoenning"
+      Url: "https://www.facebook.com/..."
       Icon: "fa-facebook-f"
     - Name: "Instagram"
-      Url: "https://www.instagram.com/kelvinstang"
+      Url: "https://www.instagram.com/..."
       Icon: "fa-instagram"
     - Name: "Linkedin"
-      Url: "https://br.linkedin.com/in/kelvinoenning"
+      Url: "https://br.linkedin.com/in/..."
       Icon: "fa-linkedin-in"
 ```
+## Tarefas, versões, correções, melhorias
+
+[Aqui](https://github.com/kelvinoenning/hugo-theme-minimalist/issues/1).
+
+### Principais melhorias para a V2.0
+- Adicionar compartilhamento com **Facebook** e **Twitter**.
+- Adicionar sistema para comentários com **disqus**.
+
+## Licença
+
+[MIT Licensed](https://github.com/kelvinoenning/hugo-theme-minimalist/blob/master/LICENSE).
