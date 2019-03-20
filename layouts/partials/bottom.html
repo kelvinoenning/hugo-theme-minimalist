@@ -1,5 +1,5 @@
+{{ partial "import-script.html" . }}
 {{ if eq .Type "post" }}
-    <script src="{{ "js/highlight.pack.js" | relURL }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 {{ end }}
 
