@@ -8,7 +8,8 @@
 }
 
 .article p {
-    line-height: 1.9em;
+    line-height: 1.7em;
+    margin: 30px 0px;
 }
 
 .article .return a, .article .return-mobile a {
@@ -54,6 +55,8 @@
 }
 
 .article-content {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
     color: #343a40;
 }
 
