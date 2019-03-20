@@ -63,7 +63,7 @@
 @media only screen and (max-width: 768px) {
     .container {
         margin: 0;
-        padding: 0;
+        padding: 10;
     }
 
     .post { 
@@ -71,6 +71,7 @@
     }
 
     .post-content {
+        margin: 5px 0px;
         height: auto;
         padding-bottom: 45px;
     }
