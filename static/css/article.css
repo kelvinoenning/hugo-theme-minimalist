@@ -1,6 +1,14 @@
+.article {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
 .article a {
     color: #dd4c4f;
-    font-size: 1.3em;
+}
+
+.article p {
+    line-height: 1.9em;
 }
 
 .article .return a, .article .return-mobile a {
@@ -40,6 +48,7 @@
 }
 
 .article-title {
+    font-family: 'Roboto Slab', serif;
     font-size: 1.2em;
     color: #343a40;
 }
@@ -55,8 +64,35 @@
     color: #343a40;
 }
 
+.article blockquote {
+    background: #f8f8f8;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.article blockquote p::before,
+.article blockquote p::after {
+    content: " \" ";
+}
+
 @media only screen and (max-width: 768px) {
+    .article {
+        width: 100%;
+    }
+    .article-title {
+        font-size: 1em;
+    }
+    .article-file {
+        margin: 5px;
+    }
     .article .return-mobile {
         display: block;
+    }
+    .article blockquote {
+        margin: 10px;
     }
 }
