@@ -16,8 +16,10 @@
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="{{ $.Params.Title }}" />
     <meta property="og:description"        content="{{ $.Params.Description }}" />
-    {{ if isset $.Params "cover" }}
-        <meta property="og:image"              content="{{ $.Params.Cover | absURL }}" />
+    {{ if and (isset $.Params "cover-image") (isset $.Params "cover-width") (isset $.Params "cover-height") }}
+        <meta property="og:image"          content="{{ (index $.Params "cover-image") | absURL }}" />
+        <meta property="og:image:width"    content="{{ (index $.Params "cover-width") }}" />
+        <meta property="og:image:height"   content="{{ (index $.Params "cover-height") }}" />
     {{ end}}
 {{ end }}
 
