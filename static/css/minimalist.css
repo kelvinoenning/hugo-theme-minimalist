@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+html, body {
+    font-family: "Raleway", sans-serif;
+}
+
 .container {
     margin: 0 auto;
     padding: 10px;
@@ -22,6 +29,7 @@
 }
 
 .post-title a {
+    font-family: 'Roboto Slab', serif;
     font-size: 1.3em;
     font-weight: bold;
     text-decoration: none;
