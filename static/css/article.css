@@ -4,10 +4,6 @@
     padding: 0px 0px 40px 0px;
 }
 
-.article a {
-    color: #dd4c4f;
-}
-
 .article p {
     line-height: 1.7em;
     margin: 30px 0px;
@@ -61,8 +57,17 @@
     color: #343a40;
 }
 
+.article-content a {
+    color: #dd4c4f;
+}
+
 .article-share {
     border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.article-share a {
+    margin-right: 5px;
+    color: #ffffff;
 }
 
 .article-file {

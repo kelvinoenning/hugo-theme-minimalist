@@ -19,8 +19,11 @@
         </div>
         <div class="article-share">
             <h4>Compartilhe este post.</h4>
-            <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank">
+            <a aria-label="Compartilhe no Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}">
                 <i class="fab fa-facebook fa-2x" aria-hidden="true" style="color:#3b5998"></i>
+            </a>
+            <a aria-label="Compartilhe no Twitter" target="_blank" href='https://twitter.com/intent/tweet?text="{{ .Title }}" {{ .Permalink }}&hashtags={{ (index $.Params "twitter-hashtag") }}'>
+                <i class="fab fa-twitter fa-2x" aria-hidden="true" style="color:#1da1f2"></i>
             </a>
         </div>
     </div>
