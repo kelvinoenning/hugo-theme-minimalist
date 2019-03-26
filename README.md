@@ -17,7 +17,7 @@ Para mais informações acesse a [documentação Hugo](https://gohugo.io/themes/
 ![Mobile](./static/img/mobile.png)
 ![Desktop](./static/img/desktop.png)
 
-## Exemplo de configuração
+## Exemplo de configuração para o blog
 
 ```yml
 BaseURL: "http://example.org/"
@@ -56,6 +56,23 @@ Params:
       Url: "https://br.linkedin.com/in/..."
       Icon: "fa-linkedin-in"
 ```
+
+## Exemplo de configuração para o post
+
+```md
+---
+title:  "<title>"
+description: "<description>"
+date:   2018-04-01 07:30:00
+tag: [tag1, tag2, tag3]
+keywords: [metakey1, metakey2]
+cover-image: "<cover-image-path>"
+cover-width: 600
+cover-height: 315
+twitter-hashtag: "hashtag1, hashtag2"
+---
+```
+
 ## Tarefas, versões, correções, melhorias
 
 [Aqui](https://github.com/kelvinoenning/hugo-theme-minimalist/issues/1).
