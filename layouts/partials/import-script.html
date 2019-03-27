@@ -1,3 +1,7 @@
+{{ if isset .Site.Params.Config "google-analytics-id" }}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ index .Site.Params.Config "google-analytics-id" }}"></script>
+{{ end }}
+
 {{ if eq .Type "post" }}
     <script src="{{ "js/highlight.pack.js" | relURL }}"></script>
 {{ end }}
