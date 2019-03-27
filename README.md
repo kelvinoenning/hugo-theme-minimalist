@@ -80,8 +80,10 @@ twitter-hashtag: "hashtag1, hashtag2"
 [Aqui](https://github.com/kelvinoenning/hugo-theme-minimalist/issues/1).
 
 ### Principais melhorias para a V2.0
-- Adicionar compartilhamento com **Facebook** e **Twitter**.
-- Adicionar sistema para comentários com **disqus**.
+- [x] Adicionar compartilhamento com **Facebook** e **Twitter**.
+- [x] Adicionar **Google Analytics**.
+- [ ] Adicionar sistema para comentários com **disqus**.
+
 
 ## Licença
 
