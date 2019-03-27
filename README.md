@@ -1,6 +1,8 @@
 # Minimalist
 
-*Minimalist* é um tema minimalista para o [Hugo](https://gohugo.io/)
+*Minimalist* é um tema minimalista para o [Hugo](https://gohugo.io/).
+
+Atualmente se encontra na versão **V1.1.0**.
 
 <a href='https://ko-fi.com/G2G1S9O1' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
@@ -30,7 +32,8 @@ Permalinks:
 
 Params:
   Config:
-    google-analytics-id: <google-id>
+    google-analytics-id: "<google-id>"
+    disqus-url: "<disqus-url>"
   Meta:
     Description: "Minimalist - O melhor tema minimalista para o Hugo"
     keywords: "minimalist, tema, theme, hugo"
@@ -72,18 +75,13 @@ cover-image: "<cover-image-path>"
 cover-width: 600
 cover-height: 315
 twitter-hashtag: "hashtag1, hashtag2"
+comments: true
 ---
 ```
 
 ## Tarefas, versões, correções, melhorias
 
 [Aqui](https://github.com/kelvinoenning/hugo-theme-minimalist/issues/1).
-
-### Principais melhorias para a V2.0
-- [x] Adicionar compartilhamento com **Facebook** e **Twitter**.
-- [x] Adicionar **Google Analytics**.
-- [ ] Adicionar sistema para comentários com **disqus**.
-
 
 ## Licença
 
