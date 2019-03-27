@@ -4,6 +4,10 @@
     padding: 0px 0px 40px 0px;
 }
 
+.article #disqus_thread {
+    margin-top: 20px;
+}
+
 .article p {
     line-height: 1.7em;
     margin: 30px 0px;
