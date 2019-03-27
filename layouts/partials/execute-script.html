@@ -8,5 +8,20 @@
     
     {{ if eq .Type "post" }}
         hljs.initHighlightingOnLoad();
+
+        {{ if and (isset .Site.Params.Config "disqus-url") (eq .Params.Comments true) }}
+            var disqus_config = function () {
+                this.page = {
+                    url: {{ .Permalink }},
+                    identifier: {{ .URL }}
+                }
+            };
+            var d = document, s = d.createElement('script');
+
+            s.src = '{{ index .Site.Params.Config "disqus-url" }}';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        {{ end }}
     {{ end }}
 </script>
