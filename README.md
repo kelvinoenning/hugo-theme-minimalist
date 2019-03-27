@@ -29,6 +29,8 @@ Permalinks:
   Post: "/:year/:month/:title/"
 
 Params:
+  Config:
+    google-analytics-id: <google-id>
   Meta:
     Description: "Minimalist - O melhor tema minimalista para o Hugo"
     keywords: "minimalist, tema, theme, hugo"
