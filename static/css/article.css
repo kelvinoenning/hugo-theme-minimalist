@@ -65,6 +65,23 @@
     color: #dd4c4f;
 }
 
+.article-content table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.article-content table, th, td {
+    border: 1px solid #dfe2e5;;
+}
+
+.article-content table tr td, .article-content table tr th {
+    padding: 8px 15px;
+}
+
+.article-content table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 .article-share {
     border-top: 1px solid rgba(0,0,0,.125);
 }
