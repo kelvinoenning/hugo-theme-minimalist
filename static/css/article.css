@@ -65,6 +65,11 @@
     color: #dd4c4f;
 }
 
+.article-content li {
+    line-height: 1.7em;
+    margin-bottom: 15px;
+}
+
 .article-content table {
     margin: 0 auto;
     border-collapse: collapse;
